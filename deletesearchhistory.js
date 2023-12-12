@@ -1,6 +1,7 @@
 chrome.tabs.onCreated.addListener(function() {
     chrome.history.search({
         'text': 'google.com/search'
+        // 'startTime': EPOCH_VALUE  // Add this if you want to specify a time frame other than the default of last 24 hours. 
         },
         function(searchResults) {deleteResults(searchResults)}
     );
