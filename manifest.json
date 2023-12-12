@@ -1,0 +1,11 @@
+{
+    "name": "Lolo VS Search Autofill",
+    "version": "1.0",
+    "description": "I hate this 'feature' that Google forces.",
+    "permissions": ["history","tabs"],
+    "manifest_version": 3,
+     "background": {
+      "service_worker": "deletesearchhistory.js",
+      "type": "module"
+    }
+ }
